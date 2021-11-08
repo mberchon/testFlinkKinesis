@@ -19,8 +19,8 @@ public class TestFlinkBasicAuthent {
 
         Properties kinesisConsumerConfig = new Properties();
         kinesisConsumerConfig.setProperty(ConsumerConfigConstants.AWS_REGION, "us-east-1");
-        kinesisConsumerConfig.setProperty(ConsumerConfigConstants.AWS_ACCESS_KEY_ID, "AKIAVPMDGWJM66K3XUWA");
-        kinesisConsumerConfig.setProperty(ConsumerConfigConstants.AWS_SECRET_ACCESS_KEY, "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");
+        kinesisConsumerConfig.setProperty(ConsumerConfigConstants.AWS_ACCESS_KEY_ID, "XXXXXXXXX");
+        kinesisConsumerConfig.setProperty(ConsumerConfigConstants.AWS_SECRET_ACCESS_KEY, "XXXXXXXXXXXXX");
 
         DataStream<String> kinesis = see.addSource(new FlinkKinesisConsumer<>(
                 "flink-test",
